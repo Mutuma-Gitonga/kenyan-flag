@@ -5,16 +5,233 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kenyan Flag</title>
+
+  <script src="./index.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0px;
+      height:100%;
+    }
+    
+    :root {
+      --containerWidth: 420px;
+      --containerHeight: 280px;
+
+      --stripeWidth: 900px;
+      --bigStripeHeight: 180px;
+      --smallStripeHeight: 30px; 
+    }
+    
+    .background {
+      margin: auto;
+      border: 3px solid green;
+      background-image: url("williamruto.jpeg");
+      background-size: cover;
+      opacity: 0.125;
+      height: 100%;
+      width: 100%;
+      position: relative;
+    }
+    
+    .flag--container {
+      margin: auto;
+      width: var(--containerWidth);
+      height: var(--containerHeight);
+      border: 2px solid white;
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* .stripe {
+      position: relative;
+    } */
+
+    /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+
+    /* .black {
+      margin: auto;
+      width: var(--containerWidth);
+      height: var(--bigStripeHeight);
+      background-color: black;
+
+      
+    }
+
+    .top--white {
+      margin: auto;
+      width: var(--containerWidth);
+      height: var(--smallStripeHeight);
+      background-color: white;
+
+      
+    }
+
+    .red {
+      margin: auto;
+      width: var(--containerWidth);
+      height: var(--bigStripeHeight);
+      background-color: red;
+    }
+
+    .bottom--white {
+      margin: auto;
+      width: var(--containerWidth);
+      height: var(--smallStripeHeight);
+      background-color: white;
+    }
+
+    .green {
+      margin: auto;
+      width: var(--containerWidth);
+      height: var(--bigStripeHeight);
+      background-color: green;
+    } */
+
+    /* @media (max-width: 320px) {
+      .background {
+        margin: auto;
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 267px;
+        opacity: 0.125;
+        
+      }
+
+      .background {
+        margin: auto;
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: contain;
+        opacity: 0.125;
+        height: 600px;
+        width: 90%;
+        position: relative;
+      }
+      
+      
+    }*/
+    
+    /* @media (max-width: 480px) {
+      .background {
+        margin: auto;
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: cover;
+        opacity: 0.125;
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+    
+    .flag--container {
+        margin: auto;
+        width: var(--containerWidth);
+        height: var(--containerHeight);
+        border: 2px solid white;
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+    } */
+    
+    /*@media (max-width: 768px) {
+      .background {
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 640px;
+        opacity: 0.125;
+        margin: auto;
+      }
+
+      
+    }
+
+    @media (max-width: 1024px) {
+      .background {
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 853px;
+        opacity: 0.125;
+        margin: auto;
+      }
+      
+      
+    }
+
+    @media (max-width: 1200px) {
+      .background {
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 1000px;
+        opacity: 0.125;
+        margin: auto;
+      }
+      
+      
+    }
+
+    @media (max-width: 1440px) {
+      .background {
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 1200px;
+        opacity: 0.125;
+        margin: auto;
+      }
+
+      
+    }
+
+    @media (max-width: 2560px) {
+      .background {
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 2133px;
+        opacity: 0.125;
+        margin: auto;
+      }
+
+      
+    }
+
+    @media (min-width: 2561px) {
+      .background {
+        border: 3px solid green;
+        background-image: url("williamruto.jpeg");
+        background-size: 6400px;
+        opacity: 0.125;
+        margin: auto;
+      }
+
+      
+    } */
+
+  </style>
 </head>
 <body>
-  <div class="flag--container">
-    <div class="big--stripe black"></div>
-    <div class="small--stripe top--white"></div>
-    <div class="big--stripe red"></div>
-    <div class="small--stripe bottom--white"></div>
-    <div class="big--stripe green"></div>
-    <div class="shield"></div>
+  <div class="background"></div>
+    <div class="flag--container"></div>
+      <div class="stripe black"></div>
+      <div class="stripe top--white"></div>
+      <div class="stripe red"></div>
+      <div class="stripe bottom--white"></div>
+      <div class="stripe green"></div>
+      <div class="shield"></div>
+    </div>
   </div>
-  
 </body>
 </html>
